@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '72784a15-01f4-461e-81eb-f891d656d293'
+  dockerRegistryServiceConnection: 'b045a915-ae73-432b-9af9-21877a20c020'
   imageRepository: 'pizza'
   containerRegistry: 'mylab101.azurecr.io'
   dockerfilePath: 'pizzeria-website/Dockerfile'
