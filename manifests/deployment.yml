@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: newpizzawebsite 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newpizzawebsite
+  template:
+    metadata:
+      labels:
+        app: newpizzawebsite 
+    spec:
+      containers:
+        - name: newpizzawebsite 
+          image: mylabcr97.azurecr.io/newpizzawebsite
+          ports:
+          - containerPort: 80
